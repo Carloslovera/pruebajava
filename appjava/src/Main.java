@@ -1,4 +1,8 @@
+import java.sql.SQLOutput;
+import java.text.NumberFormat;
 import java.util.Arrays;
+import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -166,7 +170,7 @@ public class Main {
         2.Asigna un valor diferente a cada una de las 6 posiciones de la matriz utilizando los índices (ejemplo: [0][0], [0][1], etc.).
         3.Imprime la matriz completa en una sola línea de consola usando el método visto en tus apuntes para arreglos multidimensionales.
         4.Declara una constante de tipo entero llamada CAPACIDAD_MAXIMA con el valor 100.
-        5.Imprime un mensaje que concatene un texto con el valor de esa constante.*/
+        5.Imprime un mensaje que concatene un texto con el valor de esa constante.
 
         //1
 
@@ -188,12 +192,12 @@ public class Main {
 
         System.out.println("La capacidad maxima de personas permitidas en el ascensor es de " + CAPACIDAD_MAXIMA);
 
-        /*Actividad 2: Calculadora de Gastos (Aritmética y Precisión)
+        Actividad 2: Calculadora de Gastos (Aritmética y Precisión)
         1.Declara una variable entera totalCuenta con el valor 500.
         2.Declara una variable entera amigos con el valor 3.
         3.Calcula la división y guárdala en una variable de tipo double llamada pagoIndividual. Importante: Asegúrate de que el resultado muestre los decimales correctamente (que no salga truncado).
         4.Usa el operador de módulo (%) para obtener el residuo de totalCuenta entre amigos e imprímelo con un mensaje descriptivo.
-        5.Declara una variable x con el valor 10. Usa el operador de incremento de modo que, al asignarlo a una nueva variable y, el valor de x se incremente antes de la asignación. Imprime ambos valores.*/
+        5.Declara una variable x con el valor 10. Usa el operador de incremento de modo que, al asignarlo a una nueva variable y, el valor de x se incremente antes de la asignación. Imprime ambos valores.
 
         //1
         int totalCuenta = 500;
@@ -208,7 +212,118 @@ public class Main {
         //5
         int x = 10;
         int y = ++x;
-        System.out.println(y);
+        System.out.println(y);*/
+
+       /* //Clase math
+
+        int valorAbsolu = Math.abs(-20);
+        System.out.println(valorAbsolu);
+
+        double valorCeil = Math.ceil(10.50);
+        System.out.println(valorCeil);
+
+        double valorFloor = Math.floor(10.50);
+        System.out.println(valorFloor);
+
+        int devuelMayo = Math.max(10, 65);
+        System.out.println(devuelMayo);
+
+        int devuelMenor = Math.min(10, 65);
+        System.out.println(devuelMenor);
+
+        long redonde = Math.round(10.50);
+        System.out.println(redonde);
+
+        double aleatori = Math.random();
+        System.out.println((int)(aleatori * 100));
+
+        Locale locale = Locale.forLanguageTag("es-AR");
+        int tipoMone = 1200;
+        //NumberFormat numberFormat = NumberFormat.getCurrencyInstance(locale);
+        //String result = numberFormat.format(tipoMone);
+       // System.out.println(result);
+
+        NumberFormat numberFormat = NumberFormat.getPercentInstance();
+        String resul = numberFormat.format(0.15);
+        System.out.println(resul);
+
+        Scanner scanner = new Scanner(System.in);
+        String saluda = scanner.next();
+        String chao = scanner.nextLine();
+        byte edad = scanner.nextByte();
+        System.out.println(chao);
+        System.out.println("Ingresa tu edad");
+        byte edad = scanner.nextByte();
+        scanner.nextLine();
+        System.out.println("Ingresa tu nombre completo");
+        String nombre = scanner.nextLine();
+        System.out.println("tu nombre es " + nombre + " y tu edad es " + edad);*/
+
+        /*Actividad 1: El Simulador de Préstamos (Math y Formato)
+        1.Declara una constante final double INTERES = 0.125;.
+        2.Crea una variable para un préstamo de 1500.30 y usa la clase Math para redondear ese valor hacia arriba (techo).
+        3.Calcula el valor absoluto de una deuda de -500 para mostrarla como un número positivo.
+        4.Genera un Número de Folio aleatorio entre 0 y 10,000 usando Math.random(). Asegúrate de que el resultado sea un número entero (int).
+        5.Usa la clase NumberFormat para imprimir el INTERES transformado a formato de porcentaje (debe mostrarse como 12% o 13%).*/
+
+        //1
+        final double INTERES = 0.125;
+
+        //2
+        double prestamo1 = 1500.30;
+        double redondear = Math.ceil(prestamo1);
+        System.out.println(redondear);
+
+        //3
+        int valor1 = Math.abs(-500);
+        System.out.println("El valor absoluto es " + valor1);
+
+        //4
+        double numeroFolio = Math.random();
+        System.out.println((int)(numeroFolio * 10000));
+
+        //5
+        NumberFormat numberFormat = NumberFormat.getPercentInstance();
+        String resultado = numberFormat.format(INTERES);
+        System.out.println(resultado);
+
+
+        /*Actividad 2: Sistema de Registro de Atletas (Scanner e Interacción)
+        1.Inicia el Scanner y pide al usuario su nombre completo (usa nextLine).
+        2.Pide al usuario su mejor marca de tiempo en segundos (usa un tipo de dato entero).
+        3.Pide al usuario su estatura con decimales (ejemplo: 1.85).
+        4.Declara una variable llamada recordOlimpico con el valor 9. Usa un
+        método de la clase Math para comparar el tiempo del usuario con el récord y que el programa imprima cuál es el
+        valor menor de los dos.
+        5.Usa la clase Math para mostrar la estatura del atleta redondeada hacia abajo (piso).
+        6.Desafío técnico: Asegúrate de que el orden de las preguntas no cause que el programa se salte la entrada del
+        nombre (manejo del buffer del Scanner).*/
+
+        //1
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa nombre completo");
+        String usuario = scanner.nextLine();
+        System.out.println("Bienvenido " + usuario );
+
+        //2
+        System.out.println( usuario + " cual es tu mejor marca en 12 segundos");
+        int segundos = scanner.nextByte();
+        System.out.println("Es una excelente marca " + segundos);
+
+        //3
+        System.out.println(usuario + " dinos tu estatura");
+        double estatura = scanner.nextDouble();
+        System.out.println( usuario + " mides " + estatura + " perfecto");
+
+        //4
+        int recordOlimpico = 9;
+        int comparar = Math.min(segundos, recordOlimpico);
+        System.out.println("Evaluando las marcas, la menor marca es " + comparar);
+
+        //5
+        double restatura = Math.floor(estatura);
+        System.out.println("Al redondear tu estatura queda asi " + restatura);
+
 
 
     }
