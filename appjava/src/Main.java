@@ -264,7 +264,7 @@ public class Main {
         2.Crea una variable para un préstamo de 1500.30 y usa la clase Math para redondear ese valor hacia arriba (techo).
         3.Calcula el valor absoluto de una deuda de -500 para mostrarla como un número positivo.
         4.Genera un Número de Folio aleatorio entre 0 y 10,000 usando Math.random(). Asegúrate de que el resultado sea un número entero (int).
-        5.Usa la clase NumberFormat para imprimir el INTERES transformado a formato de porcentaje (debe mostrarse como 12% o 13%).*/
+        5.Usa la clase NumberFormat para imprimir el INTERES transformado a formato de porcentaje (debe mostrarse como 12% o 13%).
 
         //1
         final double INTERES = 0.125;
@@ -288,7 +288,7 @@ public class Main {
         System.out.println(resultado);
 
 
-        /*Actividad 2: Sistema de Registro de Atletas (Scanner e Interacción)
+        Actividad 2: Sistema de Registro de Atletas (Scanner e Interacción)
         1.Inicia el Scanner y pide al usuario su nombre completo (usa nextLine).
         2.Pide al usuario su mejor marca de tiempo en segundos (usa un tipo de dato entero).
         3.Pide al usuario su estatura con decimales (ejemplo: 1.85).
@@ -297,7 +297,7 @@ public class Main {
         valor menor de los dos.
         5.Usa la clase Math para mostrar la estatura del atleta redondeada hacia abajo (piso).
         6.Desafío técnico: Asegúrate de que el orden de las preguntas no cause que el programa se salte la entrada del
-        nombre (manejo del buffer del Scanner).*/
+        nombre (manejo del buffer del Scanner).
 
         //1
         Scanner scanner = new Scanner(System.in);
@@ -322,7 +322,19 @@ public class Main {
 
         //5
         double restatura = Math.floor(estatura);
-        System.out.println("Al redondear tu estatura queda asi " + restatura);
+        System.out.println("Al redondear tu estatura queda asi " + restatura);*/
+
+        //Crea una calculadora que reciba
+        //2 numeros y luego imprima el resultado
+        //de la suma de estos dos numeros
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa un numero");
+        int valorA = scanner.nextInt();
+        System.out.println("Ingresa un segundo numero");
+        int valorB = scanner.nextInt();
+        int resultado = valorA + valorB;
+        System.out.println("El total es " + resultado);
 
 
 
