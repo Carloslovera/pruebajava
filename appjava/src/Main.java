@@ -3,84 +3,85 @@ import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
+import java.util.SimpleTimeZone;
 
 public class Main {
     public static void main(String[] args) {
         /**
          // Variables y tipos de datos
-        int age = 18;
-        byte edad = 15;
-        short cuenta = -2;
-        long numerosEnteros = 5;
+         int age = 18;
+         int edad = 15;
+         short cuenta = -2;
+         long numerosEnteros = 5;
 
-        System.out.println(age);
-        System.out.println(edad);
-        System.out.println(cuenta);
-        System.out.println(numerosEnteros);
+         System.out.println(age);
+         System.out.println(edad);
+         System.out.println(cuenta);
+         System.out.println(numerosEnteros);
 
-        float decimales = 15.3f;
-        double ultimosDecimales = 18.5;
+         float decimales = 15.3f;
+         double ultimosDecimales = 18.5;
 
-        System.out.println(decimales);
-        System.out.println(ultimosDecimales);
+         System.out.println(decimales);
+         System.out.println(ultimosDecimales);
 
-        boolean sonGeniales = true;
-        boolean dicenVerdadoMentira = false;
+         boolean sonGeniales = true;
+         boolean dicenVerdadoMentira = false;
 
-        System.out.println(sonGeniales);
-        System.out.println(dicenVerdadoMentira);
+         System.out.println(sonGeniales);
+         System.out.println(dicenVerdadoMentira);
 
-        char caracteres = 'a';
-        System.out.println(caracteres);
+         char caracteres = 'a';
+         System.out.println(caracteres);
 
-        String hola = ("hola mundo");
-        System.out.println(hola);
+         String hola = ("hola mundo");
+         System.out.println(hola);
 
-        // Tipos de datos primitivos
-        String hola = "Carlos esta bien";
-        System.out.println(hola);
+         // Tipos de datos primitivos
+         String hola = "Carlos esta bien";
+         System.out.println(hola);
 
-        System.out.println(hola.length());
+         System.out.println(hola.length());
 
-        String text = hola.replace("bien", "chevere");
-        System.out.println(text);
+         String text = hola.replace("bien", "chevere");
+         System.out.println(text);
 
-        System.out.println(hola.endsWith("ien"));
-        System.out.println(hola.startsWith("Car"));
-        System.out.println(hola.contains("arl"));
-        System.out.println(hola.indexOf("bien"));
-        System.out.println(text.toUpperCase());
-        System.out.println(text.toLowerCase());
+         System.out.println(hola.endsWith("ien"));
+         System.out.println(hola.startsWith("Car"));
+         System.out.println(hola.contains("arl"));
+         System.out.println(hola.indexOf("bien"));
+         System.out.println(text.toUpperCase());
+         System.out.println(text.toLowerCase());
 
-        String espacios = " fuego avanzar ";
-        System.out.println(espacios.trim());
+         String espacios = " fuego avanzar ";
+         System.out.println(espacios.trim());
 
-        String comi = "\"Hola Mundo\" ";
-        System.out.println(comi);
+         String comi = "\"Hola Mundo\" ";
+         System.out.println(comi);
 
-        String hast = "Hola \nworld";
-        System.out.println(hast);
+         String hast = "Hola \nworld";
+         System.out.println(hast);
 
-        String tabu = "Hello \ttabu";
-        System.out.println(tabu);
+         String tabu = "Hello \ttabu";
+         System.out.println(tabu);
 
-        //Arrays
-        int [] numeros = new int[5];
+         //Arrays
+         int [] numeros = new int[5];
 
-        numeros[0] = 5;
-        numeros[4] = 8;
-        numeros[2] = 3;
-        Arrays.sort(numeros);
-        System.out.println(Arrays.toString(numeros));
+         numeros[0] = 5;
+         numeros[4] = 8;
+         numeros[2] = 3;
+         Arrays.sort(numeros);
+         System.out.println(Arrays.toString(numeros));
 
-        */
+         */
 
         /*Actividad 1: Manipulador de Rutas de Sistema
         En esta actividad practicarás la concatenación, el uso de caracteres de escape (que acabas de aprender a poner con tu teclado) y métodos de búsqueda en String.
-        1.Crea una variable String llamada directorio que contenga una ruta de Windows (ejemplo: C:\Proyectos\Java\Index.java). Recuerda usar la doble barra \\ para que Java no se confunda.
+        1.Crea una doubleiable String llamada directorio que contenga una ruta de Windows (ejemplo: C:\Proyectos\Java\Index.java). Recuerda usar la doble barra \\ para que Java no se confunda.
         2.Muestra en consola cuántos caracteres tiene esa ruta.
         3.Usa un método para transformar toda la ruta a MAYÚSCULAS.
-        4.Crea una nueva variable llamada nuevaRuta que cambie la palabra "Java" por "Python" dentro de ese String.
+        4.Crea una nueva doubleiable llamada nuevaRuta que cambie la palabra "Java" por "Python" dentro de ese String.
         5.Imprime un booleano (true/false) que indique si la ruta original empieza con la letra "C".
 
 
@@ -193,11 +194,11 @@ public class Main {
         System.out.println("La capacidad maxima de personas permitidas en el ascensor es de " + CAPACIDAD_MAXIMA);
 
         Actividad 2: Calculadora de Gastos (Aritmética y Precisión)
-        1.Declara una variable entera totalCuenta con el valor 500.
-        2.Declara una variable entera amigos con el valor 3.
-        3.Calcula la división y guárdala en una variable de tipo double llamada pagoIndividual. Importante: Asegúrate de que el resultado muestre los decimales correctamente (que no salga truncado).
+        1.Declara una doubleiable entera totalCuenta con el valor 500.
+        2.Declara una doubleiable entera amigos con el valor 3.
+        3.Calcula la división y guárdala en una doubleiable de tipo double llamada pagoIndividual. Importante: Asegúrate de que el resultado muestre los decimales correctamente (que no salga truncado).
         4.Usa el operador de módulo (%) para obtener el residuo de totalCuenta entre amigos e imprímelo con un mensaje descriptivo.
-        5.Declara una variable x con el valor 10. Usa el operador de incremento de modo que, al asignarlo a una nueva variable y, el valor de x se incremente antes de la asignación. Imprime ambos valores.
+        5.Declara una doubleiable x con el valor 10. Usa el operador de incremento de modo que, al asignarlo a una nueva doubleiable y, el valor de x se incremente antes de la asignación. Imprime ambos valores.
 
         //1
         int totalCuenta = 500;
@@ -250,10 +251,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String saluda = scanner.next();
         String chao = scanner.nextLine();
-        byte edad = scanner.nextByte();
+        int edad = scanner.nextByte();
         System.out.println(chao);
         System.out.println("Ingresa tu edad");
-        byte edad = scanner.nextByte();
+        int edad = scanner.nextByte();
         scanner.nextLine();
         System.out.println("Ingresa tu nombre completo");
         String nombre = scanner.nextLine();
@@ -261,7 +262,7 @@ public class Main {
 
         /*Actividad 1: El Simulador de Préstamos (Math y Formato)
         1.Declara una constante final double INTERES = 0.125;.
-        2.Crea una variable para un préstamo de 1500.30 y usa la clase Math para redondear ese valor hacia arriba (techo).
+        2.Crea una doubleiable para un préstamo de 1500.30 y usa la clase Math para redondear ese valor hacia arriba (techo).
         3.Calcula el valor absoluto de una deuda de -500 para mostrarla como un número positivo.
         4.Genera un Número de Folio aleatorio entre 0 y 10,000 usando Math.random(). Asegúrate de que el resultado sea un número entero (int).
         5.Usa la clase NumberFormat para imprimir el INTERES transformado a formato de porcentaje (debe mostrarse como 12% o 13%).
@@ -292,7 +293,7 @@ public class Main {
         1.Inicia el Scanner y pide al usuario su nombre completo (usa nextLine).
         2.Pide al usuario su mejor marca de tiempo en segundos (usa un tipo de dato entero).
         3.Pide al usuario su estatura con decimales (ejemplo: 1.85).
-        4.Declara una variable llamada recordOlimpico con el valor 9. Usa un
+        4.Declara una doubleiable llamada recordOlimpico con el valor 9. Usa un
         método de la clase Math para comparar el tiempo del usuario con el récord y que el programa imprima cuál es el
         valor menor de los dos.
         5.Usa la clase Math para mostrar la estatura del atleta redondeada hacia abajo (piso).
@@ -322,7 +323,7 @@ public class Main {
 
         //5
         double restatura = Math.floor(estatura);
-        System.out.println("Al redondear tu estatura queda asi " + restatura);*/
+        System.out.println("Al redondear tu estatura queda asi " + restatura);
 
         //Crea una calculadora que reciba
         //2 numeros y luego imprima el resultado
@@ -334,9 +335,73 @@ public class Main {
         System.out.println("Ingresa un segundo numero");
         int valorB = scanner.nextInt();
         int resultado = valorA + valorB;
-        System.out.println("El total es " + resultado);
+        System.out.println("El total es " + resultado);*/
+
+        /*
+        int a = 10;
+        int b = 20;
+        int c = 30;
+
+        int resultado = a + b + c;
+        System.out.println("La suma es: " + resultado);
 
 
+        //2
+        double metros = 100;
+        double pulgadas = 39.37;
+        double pies = pulgadas / 12;
+        double yardas = pies / 3;
+        double millas = pies / 5280;
+
+        System.out.println("100 metros son: " + metros * pulgadas + " pulgadas");
+        System.out.println("100 metros son: " + metros * pies + " pies");
+        System.out.println("100 metros son: " + metros * yardas + " yardas");
+        System.out.println("100 metros son: " + metros * millas + " millas");
+
+        //3
+
+        int converA = (int) (metros * pulgadas);
+        System.out.println("100 metros son: " + converA + " pulgas");
+
+        //4
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa tu nombre");
+        String nombre = scanner.nextLine() ;
+        System.out.println("Ingresa tu apellido");
+        String apellido = scanner.nextLine();
+        System.out.println("Tu nombre completo es " + nombre + " " + apellido + " Bienvenido");
+
+        //5
+        float a = 85.5f ;
+        float b = 90.0f ;
+        float c = 78.3f ;
+
+        float resultado = (a + b+ c) / 3 ;
+        System.out.println(resultado); // aqui olvide el orden de gerarquia
+
+        //6
+        boolean suscripcionMensual = false  ;
+        boolean suscripcionSemestral = false ;
+        boolean suscripcionAnual = true ;
+
+        System.out.println("¿Tienes una suscripcion mensual? " + suscripcionMensual);
+        System.out.println("¿Tienes una suscripcion mensual? " + suscripcionSemestral);
+        System.out.println("¿Tienes una suscripcion mensual? " + suscripcionAnual);
+
+        //7
+        String [] cincoCursos = new String[5];
+        cincoCursos[0] = "\n Ultimate Java";
+        cincoCursos[1] = "\n Ultimate JavaScript";
+        cincoCursos[2] = "\n Ultimate Python";
+        cincoCursos[3] = "\n Ultimate React";
+        cincoCursos[4] = "\n Ultimate Git + Github";
+        System.out.println(Arrays.toString(cincoCursos));
+
+        //menos lineas de codigo diria yo que mas rapido no se si eficiente, buena pregunta no.
+        String[] cursosCinco = {"curos0", "curso1", "curso2", "curso3", "curso4"};
+        System.out.println(Arrays.toString(cursosCinco));
+
+         */
 
     }
 }
