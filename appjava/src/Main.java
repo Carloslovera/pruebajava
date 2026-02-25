@@ -401,7 +401,90 @@ public class Main {
         String[] cursosCinco = {"curos0", "curso1", "curso2", "curso3", "curso4"};
         System.out.println(Arrays.toString(cursosCinco));
 
-         */
+
+
+        int edad = 18;
+
+        String restriccionDeClasificacion = "R18";
+        boolean puedesVer = restriccionDeClasificacion.contains("R");
+
+        if(puedesVer & edad >= 18) {
+            System.out.println("Puede entrar");
+        } else {
+            System.out.println("No entra");
+        }
+
+        int a = 15;
+        int b = 15;
+
+        if (a==b) {
+            System.out.println("canta");
+        } else {
+            System.out.println("no canta");
+        }
+
+        // operadores ternarios
+        int edades = 15;
+        String mensaje = "No puede votar";
+
+        if (edades > 17){
+            mensaje = "puede votar";
+        }
+        System.out.println(mensaje);
+
+        //Para simplificar con los operadores ternarios debemos hacer lo siguiente
+
+        int edades = 18;
+        String mensaje = edades > 17 ? "puede votar" : "No puede";
+        System.out.println(mensaje);
+
+        //Switch
+
+        String accion = "eliminar";
+        switch(accion) {
+            case "agregar":
+                System.out.println("agregando");
+                break;
+            case "eliminar":
+                    System.out.println("eliminando");
+                    break;
+            default:
+                System.out.println("Accion por defecto");
+        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa un numero ");
+        int numero = scanner.nextInt();
+
+        if (numero % 2 == 0) {
+            System.out.println("es par");
+        } else {
+            System.out.println("es impar");
+        }
+            //dividir en bloques nos da mayor alcance menos codigo mas eficiente
+        if (numero % 3 == 0 && numero % 4 == 0) {
+            System.out.println("divisible por 3 y 4");
+        } else if (numero % 4 == 0){
+            System.out.println("divisible por 4");
+        } else if (numero % 3 == 0) {
+            System.out.println("divisible por 3");
+        } else {
+            System.out.println("error");
+        }*/
+
+        //blucle for
+        for (int i = 0; i < 5; i++){
+            System.out.println("Hola mundo " + i);
+        }
+        System.out.println("fin de for");
+
+        int b = 0;
+
+        while (b < 5){
+            System.out.println("Hola world " + b);
+            b++;
+        }
+        System.out.println("fin de while");
 
     }
 }
