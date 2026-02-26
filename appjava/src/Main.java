@@ -470,7 +470,7 @@ public class Main {
             System.out.println("divisible por 3");
         } else {
             System.out.println("error");
-        }*/
+        }
 
         //blucle for
         for (int i = 0; i < 5; i++){
@@ -484,7 +484,73 @@ public class Main {
             System.out.println("Hola world " + b);
             b++;
         }
-        System.out.println("fin de while");
+        System.out.println("fin de while");*/
+
+        //asi lo construi yo pero la manera mas correcta y limpia es con un swich aunque podria decir que me gusta mas esta estructura
+       /* Scanner scanner = new Scanner(System.in);
+
+    while (true) {
+        System.out.println("Ingresa un numero" + " \n1.Calculadora" + " \n2.Hackeando la nasa" + "\n3.Salir");
+        int numero = scanner.nextInt();
+
+        if (numero == 1){
+            System.out.println("Ingresa un numero");
+            int numeroUno = scanner.nextInt();
+            System.out.println("Ingresa otro numero");
+            int numeroDos = scanner.nextInt();
+            int resultado = numeroUno + numeroDos;
+            System.out.println("El total es: " + resultado);
+        };
+
+        if (numero == 2){
+            System.out.println("\n#" + "\n##" + "\n###" + "\nLa nasa fue hackeada" + "\nBienvenido frost");
+        };
+
+        if (numero == 3){
+            System.out.println("Fin del programa");
+            break;
+        };
+        continue;
+
+    }*/
+
+
+
+
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+
+            terminal: while(true){
+            System.out.println("Ingresa una opcion:");
+            System.out.println("1.Calculadora");
+            System.out.println("2.Hackeando la nasa");
+            System.out.println("3.Salir");
+
+            input = scanner.next().toLowerCase();
+
+             switch (input){
+                case "1":
+                    System.out.println("Ingresa un numero");
+                    int a = scanner.nextInt();
+                    System.out.println("Ingresa un segundo numero");
+                    int b = scanner.nextInt();
+                    System.out.println("El resultado es " + (a + b));
+                    break;
+
+                case "2":
+                    System.out.println("#");
+                    System.out.println("##");
+                    System.out.println("hakerman");
+                    break;
+
+                case "3":
+                    System.out.println("Fin del programa");
+                    break terminal;
+            }
+
+
+        }
+
 
     }
 }
