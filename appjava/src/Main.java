@@ -512,7 +512,7 @@ public class Main {
         };
         continue;
 
-    }*/
+    }
 
 
 
@@ -549,7 +549,97 @@ public class Main {
             }
 
 
+        }*/
+
+        //1 Me falto agregar bien la formula
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa el precio");
+        double precio = scanner.nextDouble();
+        System.out.println("Ingresa el porcentaje");
+        double porcentaje = scanner.nextDouble();
+        double resultado = precio - (precio * porcentaje / 100);
+        System.out.println(resultado);*/
+
+        /*//2 Bueno lo hice bien pero fue muy repetitivo el uso del if/else por lo tanto hay que mejorarlo para tener mas eficiencia en el codigo
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa calificacion");
+        double calificacion = scanner.nextDouble();
+
+        if (calificacion >= 90){
+            System.out.println("Tu calificacion es: A");
+        } else if (calificacion < 90 && calificacion >= 80) {
+            System.out.println("Tu calificacion es: B");
+        } else if (calificacion < 80 && calificacion >= 70) {
+            System.out.println("Tu calificacion es: C");
+        } else if (calificacion < 70 && calificacion >= 60) {
+            System.out.println("Tu calificacion es: D");
+        } else {
+            System.out.println("Tu calificacion es: F");
         }
+
+        scanner.close();*/
+
+        /*//3 Me encanto este problema incluso hice mejoras del sistema
+        Scanner scanner = new Scanner(System.in);
+        String codigo = "";
+        int intentos = 0;
+        final int maxIntento = 3;
+
+
+        Terminal: while(true) {
+            System.out.println("Ingresa el codigo secreto");
+            codigo = scanner.nextLine();
+            switch (codigo) {
+
+                case "1234":
+                    System.out.println("Acceso Concedido ");
+                    break Terminal;
+
+                default:
+                    //Tenemos un sistema el cual vamos hacer una mejora esta fue la fase final y colocare la mejora
+                    //System.out.println("Acceso Denegado");
+                    intentos++;
+
+                    if (intentos < maxIntento){
+                        System.out.println("Acceso denegado te quedan " + (maxIntento - intentos) + " intentos");
+                    } else {
+                        System.out.println("Acceso denegado sistema bloqueado");
+                        break Terminal;
+                    }
+
+            }
+
+        }
+        scanner.close();*/
+
+       /* Scanner scanner = new Scanner(System.in);
+        int claveCorrecta = 1234;
+
+        System.out.println("Ingresa tu contraseña");
+        int clave = scanner.nextInt();
+
+        if(clave == claveCorrecta){
+            System.out.println("Acceso Concedido");
+        } else{
+            System.out.println("Acceso Denegado");
+        }*/
+
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa el salario");
+        double salario = scanner.nextDouble();
+        double porcentaje;
+
+            if (salario < 10000){
+                porcentaje = salario * 0.05;
+            } else if (salario < 30000 ) {
+                porcentaje = salario * 0.10;
+            } else if (salario < 60000) {
+                porcentaje = salario * 0.20;
+            } else {
+                porcentaje = salario * 0.30;
+            }
+        System.out.println(" El impuesto a pagar es: " + porcentaje);
+
 
 
     }
