@@ -622,7 +622,7 @@ public class Main {
             System.out.println("Acceso Concedido");
         } else{
             System.out.println("Acceso Denegado");
-        }*/
+        }
 
        Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa el salario");
@@ -638,7 +638,83 @@ public class Main {
             } else {
                 porcentaje = salario * 0.30;
             }
-        System.out.println(" El impuesto a pagar es: " + porcentaje);
+        System.out.println(" El impuesto a pagar es: " + porcentaje);*/
+
+
+        //5
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa tu calificacion A, B, C, D, F");
+
+        char calificacion = scanner.next().toUpperCase().charAt(0);
+        String rango = "";
+
+        //asi lo hice yo y hay una manera mejor
+        if(calificacion == 'A'){
+            System.out.println("La nota " + calificacion + " equivale a un rango de calificación de  90-100");
+        } else if (calificacion == 'B'){
+            System.out.println("La nota " + calificacion + " equivale a un rango de calificación de  80-89");
+        } else if (calificacion == 'C') {
+            System.out.println("La nota " + calificacion + " equivale a un rango de calificación de  70-79");
+        } else if (calificacion == 'D') {
+            System.out.println("La nota " + calificacion + " equivale a un rango de calificación de  60-69");
+        } else {
+            System.out.println("La nota " + calificacion + " equivale a un rango menor de 60");
+        }*/
+
+        /*//Esta es la otra forma, Aunque en el ejemplo tambien podriamos hacer un switch que tal.
+        if (calificacion == 'A'){
+            rango = "90-100";
+        } else if (calificacion == 'B') {
+            rango = "80-89";
+        } else if (calificacion == 'C') {
+            rango = "70-79";
+        } else if (calificacion == 'D'){
+            rango = "60-69";
+        } else if (calificacion == 'F') {
+            rango = "menor a 60";
+        } else {
+            System.out.println("Error, por favor ingresa una nota valida (A,B,C,D,F)");
+            return;
+        }
+        System.out.println("La nota " + calificacion + " equivale a un rango " + rango);*/
+
+       /* //6
+        String [] cincoCursos = new String[5];
+        cincoCursos[0] = "\n Ultimate Java";
+        cincoCursos[1] = "\n Ultimate JavaScript";
+        cincoCursos[2] = "\n Ultimate Python";
+        cincoCursos[3] = "\n Ultimate React";
+        cincoCursos[4] = "\n Ultimate Git + Github";
+        //System.out.println(Arrays.toString(cincoCursos));
+
+        String [] cursos = {"ultimate java", "ultimate javaScript", "ultimate phyton", "ultimate react", "ultimate git + github" };
+        for (String curso : cursos) {
+            System.out.println(curso);
+        }*/
+
+
+        //7
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa un numero");
+        int numero = scanner.nextInt();
+
+        for (int i = 0; i < numero; i++) {
+
+            if (i % 2 == 0){
+                System.out.println(i + " es un numero par");
+            }
+            else {
+                System.out.println(i + " es un numero impar");
+            }
+        }*/
+
+
+
+
+
+
+
+
 
 
 
