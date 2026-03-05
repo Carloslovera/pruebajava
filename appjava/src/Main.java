@@ -706,17 +706,76 @@ public class Main {
             else {
                 System.out.println(i + " es un numero impar");
             }
-        }*/
+        }
+
+        //Este es el llamado al metodo y lo que se encuentra entre parentesis se llama argumento.
+        miMetodo("carlos", 19);
+
+    }
+
+    //Estos son metodos y lo que se encuentra entre los parentesis son parametros desde los metodos ok
+    static void miMetodo(String nombre, int edad){
+        System.out.println("hola " + nombre + " " + edad);
+    }
+   */
 
 
+    /* int resultado = suma(12,25);
+        System.out.println(resultado);
+
+    }
+
+    static int suma(int a, int b){
+        return a + b;
+    }
 
 
+    */
 
 
+        //lo que se conoce como overloading es definir el mismo metodo con diferentes funcionalidades, este es un ejemplo de eso
+    /*int resultado = suma(12,12,12);
+    int resultado2 = suma(11, 11);
+    String texto = suma();
 
+        System.out.println(resultado);
+        System.out.println(resultado2);
+        System.out.println(texto);
 
+    }
+
+    static int suma(int a, int b, int c){
+        return a + b + c;
+    }
+
+    static int suma(int a, int b){
+        return a + b;
+    }
+
+    static String suma(){
+        return "hola caballeros";
+    }*/
+
+        /*//Parametros con arrays
+        int r = suma(new int[]{1,2,3,4,5});
+        System.out.println(r);
 
 
 
     }
+        static int suma(int [] numeros){
+            int resultado = 0;
+            for (int numero : numeros){
+                resultado += numero;
+            }
+            return resultado;
+        }
+
+        //Perfecto luego de esto entra la refactorizacion que es la simplificacion de codigo
+    // en el ejemplo hicimos varios bloques de codigo que dividimos en metodos los cuales llamamos para mejorar el codigo
+    */
+
+
+    }
+
 }
